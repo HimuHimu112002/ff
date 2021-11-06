@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img_main{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.icon{
+    position: absolute;
+}
+.icon ul{
+    display: flex;
+    justify-content: center;
+}
+.icon ul li{
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.icon ul li a{
+   text-decoration: none;
+}
+.icon i{
+    font-size: 20px;
+    color: black;
+}
+.icon{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s all ease-in-out;
+    opacity: 0;
+}
+.img_main:hover .icon{
+    top: 50%;
+    opacity: 1;
+}
